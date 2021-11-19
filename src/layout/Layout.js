@@ -41,7 +41,13 @@ const Layout = () => {
           
             <Grid container spacing={2} style={{marginTop:20}}>
               <Grid item xs={4}>
-                  <Card3/>
+                  <Card3 chart={<ChartCard
+                  options={options_donut}
+                  series={series_donut}
+                  type="donut"
+                  width={400}
+                  height={250}
+                />}/>
                 {/* <ChartCard
                   options={options_donut}
                   series={series_donut}
