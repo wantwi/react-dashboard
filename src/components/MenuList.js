@@ -51,13 +51,14 @@ function MenuList() {
   return (
     <>
       <Divider />
-      {Menus.map((item) => (
+      {Menus.map((item, index) => (
         <div
           style={{
             borderBottom: "1px solid #cecece",
             overflow: "hidden",
             padding: "8px 0",
           }}
+          key={index}
         >
           <div style={{ float: "left", width: "90%" }}>{item.menu}</div>
           <div style={{ float: "right", width: "10%" }}>{item.icon}</div>

@@ -1,12 +1,12 @@
 import React from "react";
 
 import Chart from "react-apexcharts";
-
+import * as BiIcons from "react-icons/bi";
 function LineChart({ title, color, serieName }) {
   const series = [
     {
       name: serieName,
-      data: [50, 36, 45, 65, 50, 30, 40],
+      data: [50, 36, 45, 65, 53, 30, 40],
     },
   ];
   const options = {
@@ -44,13 +44,18 @@ function LineChart({ title, color, serieName }) {
   };
 
   return (
-    <Chart
-      options={options}
-      series={series}
-      type="area"
-      width="100%"
-      height={200}
-    />
+    <div>
+      <BiIcons.BiDotsHorizontalRounded
+        style={{ float: "right", marginRight: 20 }}
+      />
+      <Chart
+        options={options}
+        series={series}
+        type="area"
+        width="100%"
+        height={200}
+      />
+    </div>
   );
 }
 

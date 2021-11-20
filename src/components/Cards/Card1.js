@@ -60,7 +60,7 @@ const options = {
 };
 const series = [
   {
-    name: "series-1",
+    name: "",
     data: [50, 30, 20, 60, 50, 30, 35],
   },
 ];

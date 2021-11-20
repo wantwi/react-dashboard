@@ -1,6 +1,8 @@
 .apexcharts-legend,
 .apexcharts-toolbar,
-#SvgjsLine1623 {
+#SvgjsLine1623,
+.apexcharts-xaxis-tick,
+.apexcharts-xaxis {
   display: none !important;
 }
 .apexchartsrevenuexbar {

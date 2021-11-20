@@ -5,6 +5,7 @@ import Paper from "@mui/material/Paper";
 import { Grid, Avatar, Stack } from "@mui/material";
 import * as FaIcons from "react-icons/fa";
 import * as FiIcons from "react-icons/fi";
+import { color } from "@mui/system";
 
 const useStyles = makeStyles({
   txt_mute: {
@@ -14,6 +15,13 @@ const useStyles = makeStyles({
     boxShadow:
       "rgb(0 0 0 / 20%) 0px 3px 5px -1px, rgb(0 0 0 / 14%) 0px 6px 10px 0px, rgb(0 0 0 / 12%) 0px 1px 18px 0px",
   },
+  end_note: {
+    margin: "0px auto",
+  },
+  dot: {
+    fontSize: 60,
+    color: "#A3A3A3",
+  },
 });
 
 const Footer = () => {
@@ -22,7 +30,7 @@ const Footer = () => {
     <Grid
       container
       spacing={2}
-      style={{ margin: "0 auto" }}
+      style={{ margin: "25px auto" }}
       container
       spacing={2}
       xm={12}
@@ -30,10 +38,13 @@ const Footer = () => {
       xl={10}
     >
       <Grid item xs={3}>
-        <p>Counter Delivery, Carters Beach PostCentre, Westport</p>
+        <p className="mt-5">
+          Counter Delivery, Carters Beach PostCentre, Westport
+        </p>
       </Grid>
       <Grid item xs={3}>
         <h4>About</h4>
+        <p className={classes.txt_mute}>Company</p>
         <p className={classes.txt_mute}>Team</p>
         <p className={classes.txt_mute}>Careers</p>
         <p className={classes.txt_mute}>Blog</p>
@@ -81,6 +92,13 @@ const Footer = () => {
           </Stack>
         </div>
       </Grid>
+      <div className={classes.end_note}>
+        <p>
+          ©Udwell, LLC. All rights reserved.{" "}
+          <span className={classes.dot}>.</span> Terms & Conditions{" "}
+          <span className={classes.dot}>.</span> Privacy Policy
+        </p>
+      </div>
     </Grid>
   );
 };

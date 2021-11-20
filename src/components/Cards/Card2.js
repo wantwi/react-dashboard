@@ -16,7 +16,7 @@ const useStyles = makeStyles({
   chart_text: {
     float: "right",
     marginTop: "45px",
-    marginRight: "10px",
+    marginRight: "20px",
   },
   icon_holder: {
     float: "left",
