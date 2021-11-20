@@ -2,18 +2,17 @@ import * as React from "react";
 import { styled } from "@mui/material/styles";
 import Box from "@mui/material/Box";
 import Paper from "@mui/material/Paper";
-import {Card,Grid} from "@mui/material";
+import { Card, Grid } from "@mui/material";
 import MemuList from "../components/MenuList";
 import SideBar from "./SideBar";
 import Card1 from "../components/Cards/Card1";
 import ChartCard from "../components/Cards/ChartCard";
-import {
-  options,
-  series,
-  options_donut,
-  series_donut,
-} from "../seeData/SeedData";
+import { options_donut, series_donut } from "../seeData/SeedData";
 import Card3 from "../components/Cards/Card3";
+import Footer from "./Footer/Footer";
+import Card2 from "../components/Cards/Card2";
+import LineChart from "../components/charts/LineChart";
+import DonutChart from "../components/charts/DonutChart";
 
 const Item = styled(Paper)(({ theme }) => ({
   ...theme.typography.body2,
@@ -25,56 +24,113 @@ const Item = styled(Paper)(({ theme }) => ({
 const Layout = () => {
   return (
     <Box style={{ marginTop: "30px" }} sx={{ flexGrow: 1 }}>
-      <Grid style={{ margin: "0 auto" }} container spacing={2} xl={10}>
-        <Grid item xs={2}>
+      <Grid
+        style={{ margin: "0 auto" }}
+        container
+        spacing={2}
+        xm={12}
+        lg={11}
+        xl={10}
+      >
+        <Grid item xs={2} md={3}>
           <Paper elevation={0}>
             <SideBar />
           </Paper>
         </Grid>
-        <Grid item xs={10}>
+        {/* main start */}
+        <Grid item xs={12} xl={10} lg={9} md={8}>
           <Item>
             <Grid container spacing={2}>
-              <Card1 />
-              <Card1 />
-              <Card1 />
+              <Card1
+                title="Sales"
+                progress="progress"
+                value="98.1%"
+                change="+6.9%"
+                subTitle="Monthly Goal"
+              />
+              <Card1
+                title="Revenue"
+                progress="bar"
+                value="$13,893"
+                change="+11.3%"
+                subTitle="Total Profit"
+              />
+              <Card1
+                title="Clients"
+                progress="progress"
+                value="1,232"
+                change="+3.2%"
+                subTitle="Subscribed"
+              />
             </Grid>
-          
-            <Grid container spacing={2} style={{marginTop:20}}>
+
+            <Grid container spacing={2} style={{ marginTop: 10 }}>
               <Grid item xs={4}>
-                  <Card3 chart={<ChartCard
-                  options={options_donut}
-                  series={series_donut}
-                  type="donut"
-                  width={400}
-                  height={250}
-                />}/>
-                {/* <ChartCard
-                  options={options_donut}
-                  series={series_donut}
-                  type="donut"
-                  width={400}
-                  height={250}
-                /> */}
+                <Card3
+                  chart={
+                    <DonutChart
+                      colors={["#016450", "#EAECEE"]}
+                      data={[80, 20]}
+                    />
+                  }
+                  title="Total Sales"
+                  subTitle="+$985.56"
+                  chartAmount="$2,595"
+                  chartText="Invoiced"
+                  chartNum="23"
+                  numText="Invoiced"
+                  bgColor="#016450"
+                />
               </Grid>
               <Grid item xs={8}>
                 <Card
                   elevation={0}
                   style={{ padding: "20px ", border: "1px solid #f1f1f1" }}
                 >
-                  <ChartCard
-                    options={options}
-                    series={series}
-                    type="line"
-                    width="100%"
-                    height={250}
+                  <LineChart
+                    title="Daily Profit"
+                    color="#FF8433"
+                    serieName="Profit"
                   />
                 </Card>
               </Grid>
             </Grid>
-            
+
+            <Grid container spacing={2} style={{ marginTop: 10 }}>
+              <Grid item xs={8}>
+                <Card
+                  elevation={0}
+                  style={{ padding: "20px ", border: "1px solid #f1f1f1" }}
+                >
+                  <LineChart
+                    title="Daily active clients"
+                    color="#016450"
+                    serieName="Active client"
+                  />
+                </Card>
+              </Grid>
+              <Grid item xs={4}>
+                <Card2
+                  chart={
+                    <DonutChart
+                      colors={["#FACF55", "#EAECEE"]}
+                      data={[20, 80]}
+                    />
+                  }
+                  title="User Onboarding"
+                  subTitle="Q3 Goal: 8,000 User"
+                  chartAmount="2,452"
+                  chartText="ONBOARDED"
+                  bgColor="#FACF55"
+                />
+              </Grid>
+            </Grid>
           </Item>
         </Grid>
+
+        {/* main end */}
       </Grid>
+      <Footer />
     </Box>
   );
 };

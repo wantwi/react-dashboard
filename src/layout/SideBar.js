@@ -10,8 +10,8 @@ function SideBar() {
     <div style={{ padding: "25px" }}>
       <Profile />
       <MenuList />
-      <div style={{marginTop:30}}>
-          <p style={{padding:0,margin:0}}>Profile link</p>
+      <div style={{ marginTop: 30 }}>
+        <p style={{ padding: 0, margin: 0 }}>Profile link</p>
         <InputGroup className="mb-3">
           <FormControl
             placeholder="https://www.udwell.com/p."
@@ -19,7 +19,7 @@ function SideBar() {
             aria-describedby="basic-addon2"
             value="https://www.udwell.com/p."
           />
-          <InputGroup.Text id="basic-addon2">
+          <InputGroup.Text id="basic-addon2" style={{ background: "#fff" }}>
             <BiIcons.BiCopy />
           </InputGroup.Text>
         </InputGroup>
