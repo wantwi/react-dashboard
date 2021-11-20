@@ -26,6 +26,7 @@ function Main() {
             value="98.1%"
             change="+6.9%"
             subTitle="Monthly Goal"
+            color="#348373"
           />
           <Card1
             title="Revenue"
@@ -33,6 +34,7 @@ function Main() {
             value="$13,893"
             change="+11.3%"
             subTitle="Total Profit"
+            color="#FF8433"
           />
           <Card1
             title="Clients"
@@ -40,6 +42,7 @@ function Main() {
             value="1,232"
             change="+3.2%"
             subTitle="Subscribed"
+            color="#348373"
           />
         </Grid>
 

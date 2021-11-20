@@ -65,7 +65,7 @@ const series = [
   },
 ];
 
-function Card1({ progress, title, value, change, subTitle }) {
+function Card1({ color, progress, title, value, change, subTitle }) {
   return (
     <Grid item xs={4}>
       <Card
@@ -92,7 +92,7 @@ function Card1({ progress, title, value, change, subTitle }) {
           <div
             style={{
               float: "right",
-              color: "#348373",
+              color,
               fontSize: "12px",
               marginTop: 15,
             }}

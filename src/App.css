@@ -13,3 +13,9 @@
   padding: 0 !important;
   margin: 0 !important;
 }
+
+/* @media screen and (max-width: 480px) {
+  .side_Bar {
+    display: none;
+  }
+} */
