@@ -36,6 +36,7 @@ const Footer = () => {
       xm={12}
       lg={11}
       xl={10}
+      item
     >
       <Grid item xs={3}>
         <p className="mt-5">

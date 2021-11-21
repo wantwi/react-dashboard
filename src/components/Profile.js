@@ -16,8 +16,8 @@ function Profile() {
         <img
           src={ProfileImage}
           alt="profile"
-          width="80px"
-          height="80px"
+          width="85px"
+          height="85px"
           style={{ borderRadius: "50%" }}
         />
       </div>

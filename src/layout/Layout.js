@@ -17,6 +17,7 @@ const Layout = () => {
         xm={12}
         lg={11}
         xl={10}
+        item
       >
         <Grid item xs={2} md={3}>
           <Paper elevation={2}>

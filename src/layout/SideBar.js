@@ -7,7 +7,7 @@ import * as BiIcons from "react-icons/bi";
 
 function SideBar() {
   return (
-    <div className="side_Bar" style={{ padding: "25px 25px 40x 25px" }}>
+    <div style={{ padding: "30px 50px 30px 50px" }}>
       <Profile />
       <MenuList />
       <div style={{ marginTop: 30 }}>
@@ -18,6 +18,7 @@ function SideBar() {
             aria-label="Recipient's username"
             aria-describedby="basic-addon2"
             value="https://www.udwell.com/p."
+            onChange={(e) => console.log(e)}
           />
           <InputGroup.Text id="basic-addon2" style={{ background: "#fff" }}>
             <BiIcons.BiCopy />
