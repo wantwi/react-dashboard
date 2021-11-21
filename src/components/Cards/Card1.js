@@ -1,4 +1,4 @@
-import { Grid, Card, Paper } from "@mui/material";
+import { Grid, Card } from "@mui/material";
 import React from "react";
 import { styled } from "@mui/material/styles";
 import LinearProgress, {

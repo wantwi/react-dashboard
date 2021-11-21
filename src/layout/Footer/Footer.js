@@ -1,11 +1,9 @@
 import * as React from "react";
 import { makeStyles } from "@mui/styles";
-import Box from "@mui/material/Box";
-import Paper from "@mui/material/Paper";
+
 import { Grid, Avatar, Stack } from "@mui/material";
 import * as FaIcons from "react-icons/fa";
 import * as FiIcons from "react-icons/fi";
-import { color } from "@mui/system";
 
 const useStyles = makeStyles({
   txt_mute: {
@@ -31,8 +29,6 @@ const Footer = () => {
       container
       spacing={2}
       style={{ margin: "25px auto" }}
-      container
-      spacing={2}
       xm={12}
       lg={11}
       xl={10}
