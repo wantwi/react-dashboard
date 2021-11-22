@@ -7,7 +7,7 @@ import * as BiIcons from "react-icons/bi";
 
 function SideBar() {
   return (
-    <div style={{ padding: "30px 50px 30px 50px" }}>
+    <div style={{ padding: "30px 20px 30px 20px" }}>
       <Profile />
       <MenuList />
       <div style={{ marginTop: 30 }}>

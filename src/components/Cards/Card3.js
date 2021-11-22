@@ -49,6 +49,9 @@ const useStyles = makeStyles({
     marginRight: 10,
     fontSize: 15,
   },
+  text_divider:{
+    justifySelf: "left", marginLeft: "30px" 
+  }
 });
 
 function Card3({
@@ -87,7 +90,7 @@ function Card3({
           <span style={{ marginLeft: "45px", marginBottom: 10 }}>
             {chartText}
           </span>
-          <Divider style={{ justifySelf: "left", marginLeft: "30px" }} />
+          <Divider className={classes.text_divider} />
           <h5 style={{ marginLeft: "70px", marginTop: 10 }}>{chartNum}</h5>
           <span style={{ marginLeft: "45px" }}>{numText}</span>
         </div>

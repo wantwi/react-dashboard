@@ -19,7 +19,7 @@ const Layout = () => {
         xl={10}
         item
       >
-        <Grid item xs={2} md={3}>
+        <Grid item xs={2} md={2}>
           <Paper elevation={2}>
             <SideBar />
           </Paper>
