@@ -17,7 +17,7 @@ const Item = styled(Paper)(({ theme }) => ({
 
 function Main() {
   return (
-    <Grid item xs={12} xl={10} lg={9} md={8}>
+    <Grid item xs={12} xl={10} lg={8} md={8}>
       <Item>
         <Grid container spacing={2}>
           <Card1

@@ -28,14 +28,14 @@ const Footer = () => {
     <Grid
       container
       spacing={2}
-      style={{ margin: "25px auto" }}
+      style={{ margin: "25px auto", justifyContent: "center" }}
       xm={12}
-      lg={11}
+      lg={10}
       xl={10}
       item
     >
       <Grid item xs={3}>
-        <p className="mt-5">
+        <p className={`${classes.txt_mute}`} style={{ marginTop: 35 }}>
           Counter Delivery, Carters Beach PostCentre, Westport
         </p>
       </Grid>

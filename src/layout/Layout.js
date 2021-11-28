@@ -11,12 +11,17 @@ const Layout = () => {
   return (
     <Box style={{ marginTop: "30px" }} sx={{ flexGrow: 1 }}>
       <Grid
-        style={{ margin: "0 auto" }}
+        style={{
+          margin: "0 auto",
+
+          justifyContent: "center",
+        }}
         container
         spacing={2}
         xm={12}
-        lg={11}
+        lg={12}
         xl={10}
+        md={12}
         item
       >
         <Grid item xs={2} md={2}>
